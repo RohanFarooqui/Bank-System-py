@@ -5,9 +5,9 @@ from Loginfun      import login_acc
 
 def depandwithdraw():
   print(" ")
-  while(True): 
-    i=str(input("                         Enter Your Acc Number     : "))
-    j=str(input("                         Enter Your Password       : "))
+  i=str(input("                         Enter Your Acc Number     : "))
+  j=str(input("                         Enter Your Password       : "))
+  while(True):
     k=login_acc(i,j)
     if(k==True):
         os.system('cls')
@@ -49,7 +49,8 @@ def depandwithdraw():
             d.write(" at ")
             d.write(time)
             d.close()
-            print("Amount deposited in Your Account")
+            print("                         Amount deposited in Your Account")
+            break
           except:
              print("                         ")
              print("               Warning⚠There is no FILES regarding this Account.\n                    Eihter the Files are deleted or moved  ")
@@ -67,21 +68,25 @@ def depandwithdraw():
             else:
                 numbers = f.readline()
             k=int(numbers)
-            a=(k-pput)
-            b=str(a)
-            f.close()
-            k=open(mypath+".txt","w")
-            g=k.write(b)
-            rohan=str(pput)
-            d=open(path+".txt","a")
-            d.write("\n")
-            d.write(rohan)
-            d.write(" Rupees amount WithDraw on ")
-            d.write(date)
-            d.write(" at ")
-            d.write(time)
-            d.close()
-            print("Amount is credit from Your Account")
+            a=int(k-pput)
+            c=int(500)
+            if(a >= c):
+              b=str(a)
+              f.close()
+              k=open(mypath+".txt","w")
+              g=k.write(b)
+              rohan=str(pput)
+              d=open(path+".txt","a")
+              d.write("\n")
+              d.write(rohan)
+              d.write(" Rupees amount WithDraw on ")
+              d.write(date)
+              d.write(" at ")
+              d.write(time)
+              d.close()
+              print("                         Amount is credit from Your Account")
+            else:
+              print("                         Insufficient Balance Minimum 500 should \n be in Account, Your Account has ",k," Rupees")
           except:
              print("                         ")
              print("               Warning⚠There is no FILES regarding this Account.\n                    Eihter the Files are deleted or moved  ")
@@ -94,4 +99,5 @@ def depandwithdraw():
          print("                  Error !!!!..Retry...In Correct Credential ⚠ ")
          print("                         ")
     
+
 
