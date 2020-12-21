@@ -1,6 +1,6 @@
 ![](https://github.com/LOL-32/Bank-System-py/blob/master/bank_system_py_SC.png)
 
-# **Bank Management System - Python** :
+# **Bank Management System - Python** 
 
 ### **Language** : Python 
 
