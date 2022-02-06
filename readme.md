@@ -8,8 +8,6 @@
 
  Blog         : https://rohanfarooqui.wordpress.com/2018/09/06/bank-system/
  
- Video (Demo) : (link Update Soon)
-
 
 
 ### **To Run this Code** :
