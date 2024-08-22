@@ -3,13 +3,7 @@
 # **Bank Management System - Python** 
 
 ### **Language** : Python3
-
-### **Description** :
-
- Blog         : https://rohanfarooqui.wordpress.com/2018/09/06/bank-system/
  
-
-
 ### **To Run this Code** :
 
 * run simply maincall.py :)  
